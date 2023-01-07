@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dbdForm" prefHeight="741.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <JFXTextField layoutX="-4.0" prefHeight="742.0" prefWidth="299.0" style="-fx-background-color: #273c75;" />
+      <Label alignment="CENTER" layoutX="9.0" layoutY="4.0" prefHeight="60.0" prefWidth="212.0" text="Harsha Auto" textFill="#eba0a0">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="18.0" layoutY="66.0" opacity="0.26" prefHeight="2.0" prefWidth="260.0" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="147.0" onAction="#btnCustomerForm" prefHeight="46.0" prefWidth="260.0" ripplerFill="#f5f5f5" text="CUSTOMERS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="13.0" layoutY="223.0" onAction="#btnVehicleForm" prefHeight="46.0" prefWidth="260.0" ripplerFill="#f5f5f5" text="VEHICLES" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="12.0" layoutY="296.0" onAction="#btnBookingForm" prefHeight="46.0" prefWidth="260.0" ripplerFill="#f5f5f5" text="BOOKINGS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="13.0" layoutY="371.0" onAction="#btnItemForm" prefHeight="46.0" prefWidth="260.0" ripplerFill="#f5f5f5" text="STOCK" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="437.0" onAction="#btnOrderForm" prefHeight="46.0" prefWidth="260.0" ripplerFill="#f5f5f5" text="ORDERS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="514.0" onAction="#btnRepairForm" prefHeight="46.0" prefWidth="260.0" ripplerFill="#f5f5f5" text="REPAIRS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="588.0" onAction="#btnPaymentForm" prefHeight="46.0" prefWidth="260.0" ripplerFill="#f5f5f5" text="PAYMENTS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="18.0" layoutY="665.0" onAction="#btnLogout" opacity="0.91" prefHeight="38.0" prefWidth="260.0" ripplerFill="#f5f5f5" style="-fx-background-color: #ff4757;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane fx:id="pane" layoutX="294.0" layoutY="42.0" prefHeight="323.0" prefWidth="855.0" />
+      <Pane fx:id="paneTwo" layoutX="294.0" layoutY="369.0" prefHeight="373.0" prefWidth="855.0" />
+      <ImageView fitHeight="60.0" fitWidth="67.0" layoutX="220.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/car.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="74.0" onAction="#btnDashBoardForm" prefHeight="46.0" prefWidth="260.0" ripplerFill="#f5f5f5" text="DASHBOARD" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblDate" layoutX="768.0" layoutY="8.0" prefHeight="31.0" prefWidth="140.0" text="Date">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="979.0" layoutY="8.0" prefHeight="31.0" prefWidth="140.0" text="Time">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="707.0" layoutY="7.0" prefHeight="31.0" prefWidth="60.0" text="Date :-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="927.0" layoutY="7.0" prefHeight="31.0" prefWidth="60.0" text="Time:-">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

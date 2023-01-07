@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="tblItemForm" prefHeight="345.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TableItemFormController">
+   <children>
+      <TableView fx:id="tblItems" prefHeight="345.0" prefWidth="855.0">
+        <columns>
+          <TableColumn fx:id="colItemId" prefWidth="213.0" text="Item_Id" />
+          <TableColumn fx:id="colItemName" minWidth="0.0" prefWidth="220.0" text="Item_Name" />
+            <TableColumn fx:id="colItemPrice" minWidth="0.0" prefWidth="211.0" text="Item_Price" />
+            <TableColumn fx:id="colItemQty" minWidth="0.0" prefWidth="211.0" text="Item_Qty" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

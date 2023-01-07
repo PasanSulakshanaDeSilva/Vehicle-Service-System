@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RepairFormController">
+   <children>
+      <JFXTextField fx:id="txtRepairId" focusColor="BLACK" labelFloat="true" layoutX="40.0" layoutY="60.0" promptText="Repair ID" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cmbVehicleId" layoutX="407.0" layoutY="60.0" promptText="Vehicle ID" />
+      <JFXComboBox fx:id="cmbCustId" layoutX="395.0" layoutY="167.0" promptText="Customer ID" />
+      <JFXDatePicker fx:id="txtDate" layoutX="37.0" layoutY="167.0" promptText="Date" />
+      <JFXButton layoutX="428.0" layoutY="274.0" onAction="#btnAddOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #0984e3; -fx-background-radius: 20;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="541.0" layoutY="274.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #636e72; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="752.0" layoutY="274.0" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #ff7675; -fx-background-radius: 20;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="649.0" layoutY="274.0" onAction="#btnSearchOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #55efc4; -fx-background-radius: 20;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="37.0" layoutY="14.0" prefHeight="20.0" prefWidth="198.0" text="Repair Form" textFill="#0f6b80">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="41.0" layoutY="40.0" prefHeight="11.0" prefWidth="777.0" />
+   </children>
+</AnchorPane>

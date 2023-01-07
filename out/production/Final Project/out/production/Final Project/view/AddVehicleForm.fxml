@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tblVehicleForm" prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <JFXTextField fx:id="txtVehicleId" focusColor="BLACK" labelFloat="true" layoutX="52.0" layoutY="59.0" promptText="Vehicle_Id" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtVehicleName" focusColor="BLACK" labelFloat="true" layoutX="397.0" layoutY="60.0" promptText="Vehicle_Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtVehicleColour" focusColor="BLACK" labelFloat="true" layoutX="52.0" layoutY="183.0" promptText="Vehicle_Colour" unFocusColor="BLACK" />
+      <JFXButton layoutX="682.0" layoutY="54.0" onAction="#btnAddVehicleOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #0984e3;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="682.0" layoutY="139.0" onAction="#btnUpdateVehicleOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #ff7675;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="682.0" layoutY="238.0" onAction="#btnDeleteVehicleOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #636e72;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbCustomerId" layoutX="400.0" layoutY="183.0" promptText="Customer_Id" />
+   </children>
+</AnchorPane>

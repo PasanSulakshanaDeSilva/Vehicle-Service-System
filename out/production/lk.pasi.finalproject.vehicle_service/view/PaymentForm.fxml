@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="63.0" layoutY="58.0" promptText="Payment ID" unFocusColor="BLACK" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="63.0" layoutY="149.0" promptText="Payment Fee" unFocusColor="BLACK" />
+      <JFXComboBox layoutX="352.0" layoutY="59.0" promptText="Customer ID" />
+      <JFXDatePicker layoutX="352.0" layoutY="157.0" promptText="Date" />
+      <JFXButton layoutX="404.0" layoutY="268.0" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: #0984e3; -fx-background-radius: 20;" text="PAID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="518.0" layoutY="268.0" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: #636e72; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="632.0" layoutY="268.0" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: #55efc4; -fx-background-radius: 20;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="741.0" layoutY="268.0" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: #ff7675; -fx-background-radius: 20;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="56.0" prefHeight="20.0" prefWidth="198.0" text="Payment Form" textFill="#0f6b80">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="56.0" layoutY="30.0" prefHeight="11.0" prefWidth="777.0" />
+   </children>
+</AnchorPane>

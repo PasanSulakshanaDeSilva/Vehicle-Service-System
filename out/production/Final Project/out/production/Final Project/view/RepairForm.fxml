@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RepairFormController">
+   <children>
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="63.0" layoutY="50.0" promptText="Repair ID" unFocusColor="BLACK" />
+      <JFXButton layoutX="472.0" layoutY="266.0" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #0984e3;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="692.0" layoutY="50.0" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #ff7675;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="692.0" layoutY="143.0" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #55efc4;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="692.0" layoutY="225.0" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #636e72;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox layoutX="393.0" layoutY="50.0" promptText="Vehicle ID" />
+      <JFXComboBox layoutX="385.0" layoutY="157.0" promptText="Customer ID" />
+      <JFXDatePicker layoutX="63.0" layoutY="157.0" promptText="Date" />
+   </children>
+</AnchorPane>

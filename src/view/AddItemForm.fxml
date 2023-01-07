@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemFormController">
+   <children>
+      <JFXTextField fx:id="txtItemId" focusColor="BLACK" labelFloat="true" layoutX="68.0" layoutY="60.0" onAction="#itemEnterOnAction" promptText="Item ID" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtItemName" focusColor="BLACK" labelFloat="true" layoutX="406.0" layoutY="60.0" promptText="Item Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtItemPrice" focusColor="BLACK" labelFloat="true" layoutX="68.0" layoutY="204.0" promptText="Item Price" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtItemQty" focusColor="BLACK" labelFloat="true" layoutX="406.0" layoutY="204.0" promptText="Item Qty" unFocusColor="BLACK" />
+      <JFXButton layoutX="452.0" layoutY="279.0" onAction="#btnAddOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #0984e3; -fx-background-radius: 20;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="553.0" layoutY="279.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #636e72; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="758.0" layoutY="279.0" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #ff7675; -fx-background-radius: 20;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="655.0" layoutY="279.0" onAction="#btnItemSearchOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #55efc4; -fx-background-radius: 20;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="57.0" layoutY="2.0" prefHeight="37.0" prefWidth="226.0" text="Item Form" textFill="#0f6b80">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="58.0" layoutY="42.0" prefHeight="11.0" prefWidth="777.0" />
+   </children>
+</AnchorPane>

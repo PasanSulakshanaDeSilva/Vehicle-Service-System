@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderFormController">
+   <children>
+      <JFXTextField fx:id="itmName" focusColor="BLACK" labelFloat="true" layoutX="359.0" layoutY="64.0" promptText="Item Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="itmPrice" focusColor="BLACK" labelFloat="true" layoutX="53.0" layoutY="214.0" promptText="Item Price" unFocusColor="BLACK" />
+      <JFXButton layoutX="682.0" layoutY="65.0" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #0984e3;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="682.0" layoutY="150.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #ff7675;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="682.0" layoutY="245.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #636e72;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="OrderId" focusColor="BLACK" labelFloat="true" layoutX="359.0" layoutY="139.0" promptText="Order ID" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="CustId" layoutX="53.0" layoutY="139.0" promptText="Customer ID" />
+      <JFXTextField fx:id="itmAmount" focusColor="BLACK" labelFloat="true" layoutX="359.0" layoutY="214.0" promptText="Amount" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cmbItmId" layoutX="53.0" layoutY="71.0" promptText="Item ID" />
+   </children>
+</AnchorPane>

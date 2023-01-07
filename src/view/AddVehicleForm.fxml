@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tblVehicleForm" prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <JFXTextField fx:id="txtVehicleId" focusColor="BLACK" labelFloat="true" layoutX="52.0" layoutY="59.0" onAction="#vehicleIdSearchOnAction" onKeyReleased="#txtVehicleIdOnKeyReleased" promptText="Vehicle_Id" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtVehicleName" focusColor="BLACK" labelFloat="true" layoutX="397.0" layoutY="60.0" onKeyReleased="#txtVehicleIdOnKeyReleased" promptText="Vehicle_Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtVehicleColour" focusColor="BLACK" labelFloat="true" layoutX="52.0" layoutY="183.0" onKeyReleased="#txtVehicleIdOnKeyReleased" promptText="Vehicle_Colour" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cmbCustomerId" layoutX="400.0" layoutY="183.0" promptText="Customer_Id" />
+      <JFXButton fx:id="btnAdd" layoutX="457.0" layoutY="254.0" onAction="#btnAddVehicleOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #0984e3; -fx-background-radius: 20;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="558.0" layoutY="254.0" onAction="#btnUpdateVehicleOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #636e72; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="757.0" layoutY="254.0" onAction="#btnDeleteVehicleOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #ff7675; -fx-background-radius: 20;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="659.0" layoutY="254.0" onAction="#btnSearchOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #55efc4; -fx-background-radius: 20;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="51.0" layoutY="3.0" prefHeight="37.0" prefWidth="226.0" text="Vehicle Form" textFill="#0f6b80">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="55.0" layoutY="40.0" prefHeight="11.0" prefWidth="777.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="tblRepairForm" prefHeight="345.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RepairFormController">
+   <children>
+      <TableView fx:id="tblRepairs" prefHeight="345.0" prefWidth="855.0">
+        <columns>
+          <TableColumn fx:id="colRepairId" prefWidth="200.0" text="Repair Id" />
+          <TableColumn fx:id="colRepairDate" prefWidth="215.0" text="Date" />
+            <TableColumn fx:id="colRepairVehicleId" prefWidth="221.0" text="Vehicle Id" />
+            <TableColumn fx:id="colRepairCustomerId" prefWidth="221.0" text="Customer Id" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

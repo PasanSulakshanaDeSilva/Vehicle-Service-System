@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dbdForm" prefHeight="741.0" prefWidth="1149.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <JFXTextField prefHeight="741.0" prefWidth="294.0" style="-fx-background-color: #636e72;" />
+      <Label alignment="CENTER" layoutX="35.0" layoutY="10.0" prefHeight="60.0" prefWidth="193.0" text="Harsha Auto">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="19.0" layoutY="78.0" prefHeight="2.0" prefWidth="260.0" />
+      <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="117.0" onAction="#btnCustomerForm" prefHeight="46.0" prefWidth="131.0" ripplerFill="#f5f5f5" text="CUSTOMERS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="193.0" onAction="#btnVehicleForm" prefHeight="46.0" prefWidth="131.0" ripplerFill="#f5f5f5" text="VEHICLES" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="273.0" onAction="#btnBookingForm" prefHeight="46.0" prefWidth="131.0" ripplerFill="#f5f5f5" text="BOOKINGS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="352.0" onAction="#btnItemForm" prefHeight="46.0" prefWidth="131.0" ripplerFill="#f5f5f5" text="ITEMS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="430.0" onAction="#btnOrderForm" prefHeight="46.0" prefWidth="131.0" ripplerFill="#f5f5f5" text="ORDERS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="512.0" onAction="#btnRepairForm" prefHeight="46.0" prefWidth="131.0" ripplerFill="#f5f5f5" text="REPAIRS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="586.0" onAction="#btnPaymentForm" prefHeight="46.0" prefWidth="131.0" ripplerFill="#f5f5f5" text="PAYMENTS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="43.0" layoutY="665.0" onAction="#btnLogout" prefHeight="38.0" prefWidth="206.0" ripplerFill="#f5f5f5" style="-fx-background-color: #a29bfe;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane fx:id="pane" layoutX="294.0" layoutY="-2.0" prefHeight="344.0" prefWidth="855.0" />
+      <Pane fx:id="paneTwo" layoutX="294.0" layoutY="360.0" prefHeight="382.0" prefWidth="855.0" />
+   </children>
+</AnchorPane>

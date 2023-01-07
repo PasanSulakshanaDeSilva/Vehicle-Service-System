@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+   <children>
+      <AnchorPane prefHeight="344.0" prefWidth="855.0">
+         <children>
+            <JFXTextField fx:id="txtCustId" focusColor="BLACK" labelFloat="true" layoutX="58.0" layoutY="50.0" promptText="Customer ID" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtCustName" focusColor="BLACK" labelFloat="true" layoutX="396.0" layoutY="50.0" promptText="Customer Name" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtCustAddress" focusColor="BLACK" labelFloat="true" layoutX="58.0" layoutY="194.0" promptText="Customer Address" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtCustContact" focusColor="BLACK" labelFloat="true" layoutX="396.0" layoutY="194.0" promptText="Customer Contact" unFocusColor="BLACK" />
+            <JFXButton layoutX="684.0" layoutY="59.0" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #0984e3;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="684.0" layoutY="141.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #ff7675;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="684.0" layoutY="217.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #636e72;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

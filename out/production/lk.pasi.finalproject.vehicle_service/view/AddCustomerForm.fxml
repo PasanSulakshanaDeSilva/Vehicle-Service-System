@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+   <children>
+      <AnchorPane prefHeight="344.0" prefWidth="855.0">
+         <children>
+            <JFXTextField fx:id="txtCustId" focusColor="BLACK" labelFloat="true" layoutX="59.0" layoutY="68.0" onAction="#custEnterOnAction" onKeyReleased="#txtIdOnKeyReleased" promptText="Customer Id" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtCustName" focusColor="BLACK" labelFloat="true" layoutX="397.0" layoutY="68.0" onKeyReleased="#txtIdOnKeyReleased" promptText="Customer Name" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtCustAddress" focusColor="BLACK" labelFloat="true" layoutX="59.0" layoutY="180.0" onKeyReleased="#txtIdOnKeyReleased" promptText="Customer Address" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtCustContact" focusColor="BLACK" labelFloat="true" layoutX="398.0" layoutY="180.0" onKeyReleased="#txtIdOnKeyReleased" promptText="Customer Contact" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></JFXTextField>
+            <JFXButton fx:id="btnAdd" layoutX="436.0" layoutY="265.0" onAction="#btnAddOnAction" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: #0984e3; -fx-background-radius: 20;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="539.0" layoutY="265.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: #636e72; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="743.0" layoutY="265.0" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: #ff7675; -fx-background-radius: 20;" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="644.0" layoutY="265.0" onAction="#btnSearchOnAction" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #55efc4; -fx-background-radius: 20;" text="SEARCH" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="47.0" layoutY="6.0" prefHeight="37.0" prefWidth="226.0" text="Customer Form" textFill="#0f6b80">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="48.0" layoutY="43.0" prefHeight="11.0" prefWidth="777.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

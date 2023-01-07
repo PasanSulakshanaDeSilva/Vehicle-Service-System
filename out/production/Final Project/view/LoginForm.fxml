@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginForm" prefHeight="535.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="673.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/mechanic-holding-pair-wrenches-repair-garage-min.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" focusColor="BLACK" labelFloat="true" layoutX="734.0" layoutY="179.0" prefHeight="44.0" prefWidth="239.0" promptText="User Name" unFocusColor="BLACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" focusColor="BLACK" labelFloat="true" layoutX="735.0" layoutY="289.0" prefHeight="51.0" prefWidth="239.0" promptText="Password" unFocusColor="BLACK">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="744.0" layoutY="431.0" onAction="#btnLoginOnAction" prefHeight="45.0" prefWidth="213.0" style="-fx-background-color: #12CBC4;" text="Login" textAlignment="CENTER" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="797.0" layoutY="41.0" text="LOGIN" textFill="#6d7575">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="42.0" prefHeight="56.0" prefWidth="472.0" text="Welcome to Harsha Auto " textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
